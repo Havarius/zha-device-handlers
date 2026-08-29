@@ -41,7 +41,6 @@ from zhaquirks.builder import (
 )
 from zhaquirks.clusters import CustomCluster
 
-
 PROTECTION_TRIP_BIT = 0x04
 
 
@@ -191,6 +190,7 @@ class SonoffS60ManufacturerCluster(CustomCluster):
             type=t.uint32_t,
             manufacturer_code=None,
         )
+
 
 # firmware version that fixed the power reporting bug (max_version is exclusive)
 S60_POWER_FIX_FW_VERSION = 0x00002003
